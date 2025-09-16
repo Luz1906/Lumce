@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteca Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <h1>📚 Biblioteca Virtual</h1>
+    </header>
+
+    <main>
+    <!-- Sección Registrar Libro -->
+    <section class="form-section">
+    <h2>➕ Registrar Libro</h2>
+    <form id="formLibro">
+        <input type="text" id="titulo" placeholder="Título" required>
+        <input type="text" id="autor" placeholder="Autor" required>
+        <input type="number" id="anio" placeholder="Año" required>
+        <input type="text" id="categoria" placeholder="Categoría" required>
+        <button type="submit">Agregar Libro</button>
+    </form>
+    </section>
+
+    <!-- Lista de Libros -->
+    <section class="table-section">
+    <h2>📑 Lista de Libros</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Año</th>
+            <th>Categoría</th>
+            <th>Acciones</th>
+        </tr>
+        </thead>
+        <tbody id="listaLibros"></tbody>
+    </table>
+    </section>
+
+    <!-- Registrar Préstamo -->
+    <section class="form-section">
+    <h2>📌 Registrar Préstamo</h2>
+    <form id="formPrestamo">
+        <input type="text" id="alumno" placeholder="Alumno" required>
+        <input type="number" id="idLibro" placeholder="ID del Libro" required>
+        <input type="date" id="fecha" required>
+        <button type="submit">Registrar Préstamo</button>
+    </form>
+    </section>
+
+    <!-- Lista de Préstamos -->
+    <section class="table-section">
+    <h2>📋 Lista de Préstamos</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Alumno</th>
+            <th>Libro ID</th>
+            <th>Fecha</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+        </thead>
+        <tbody id="listaPrestamos"></tbody>
+    </table>
+    </section>
+    </main>
+
+    <footer>
+    <p>© 2025 IESTP Recuay - Arquitectura y Diseño Web - Castañeda Espinoza Luz de Maria</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
